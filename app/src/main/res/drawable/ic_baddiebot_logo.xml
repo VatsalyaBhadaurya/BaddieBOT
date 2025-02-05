@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Gradient Background Circle -->
+    <path
+        android:fillColor="#FF1493"
+        android:pathData="M54,0A54,54 0 1,0 54,108A54,54 0 1,0 54,0z"/>
+
+    <!-- Glam Sparkles -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M20,30l5,-5l-2,5l5,-2z"/>
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M80,25l6,-3l-3,6l6,-3z"/>
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M85,70l4,-4l-1,4l4,-1z"/>
+
+    <!-- Bot Face - Outer Ring with Glam -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28C38.536,28 26,40.536 26,56C26,71.464 38.536,84 54,84C69.464,84 82,71.464 82,56C82,40.536 69.464,28 54,28zM54,80C40.745,80 30,69.255 30,56C30,42.745 40.745,32 54,32C67.255,32 78,42.745 78,56C78,69.255 67.255,80 54,80z"/>
+
+    <!-- Winged Eyeliner Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,48m-6,0a6,6 0 1,1 12,0a6,6 0 1,1 -12,0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,48m-6,0a6,6 0 1,1 12,0a6,6 0 1,1 -12,0"/>
+    
+    <!-- Dramatic Eyeliner -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M38,48l-8,-4"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M70,48l8,-4"/>
+
+    <!-- Long Dramatic Eyelashes -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M41,42l-4,-4 M44,40l0,-5 M47,42l4,-4"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M61,42l-4,-4 M64,40l0,-5 M67,42l4,-4"/>
+
+    <!-- Pouty Lips -->
+    <path
+        android:fillColor="#FF69B4"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M44,65Q54,75 64,65Q54,70 44,65"/>
+
+    <!-- Fancy Crown with Gems -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M54,15l-15,10h30z"/>
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M44,25m-2,0a2,2 0 1,1 4,0a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M54,22m-2,0a2,2 0 1,1 4,0a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M64,25m-2,0a2,2 0 1,1 4,0a2,2 0 1,1 -4,0"/>
+
+    <!-- Beauty Mark -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68,58m-1,0a1,1 0 1,1 2,0a1,1 0 1,1 -2,0"/>
+</vector> 

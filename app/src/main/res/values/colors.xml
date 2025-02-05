@@ -22,4 +22,7 @@
     <color name="playful_primary">#FF9800</color>
     <color name="playful_background">#FFF3E0</color>
     <color name="playful_text">#E65100</color>
+
+    <!-- Add this to your existing colors.xml -->
+    <color name="ic_launcher_background">#FF1493</color>
 </resources>
