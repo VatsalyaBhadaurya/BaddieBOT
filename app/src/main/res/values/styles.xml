@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base button style -->
+    <style name="BaddieBotButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Mood toggle button style -->
+    <style name="BaddieBotButton.Mood">
+        <item name="backgroundTint">@color/sassy_primary</item>
+        <item name="rippleColor">@color/sassy_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Send button style -->
+    <style name="BaddieBotButton.Send">
+        <item name="backgroundTint">@color/sassy_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="icon">@drawable/ic_send</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+</resources> 

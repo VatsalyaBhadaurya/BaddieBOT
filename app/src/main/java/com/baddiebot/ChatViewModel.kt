@@ -12,6 +12,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 import java.io.IOException
+import java.util.concurrent.TimeUnit
 
 class ChatViewModel : ViewModel() {
     private val _chatMessages = MutableLiveData<List<ChatMessage>>(emptyList())
@@ -20,7 +21,11 @@ class ChatViewModel : ViewModel() {
     private val _currentMood = MutableLiveData<BotMood>(BotMood.SASSY)
     val currentMood: LiveData<BotMood> = _currentMood
     
-    private val client = OkHttpClient()
+    private val client = OkHttpClient.Builder()
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .writeTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
+        .build()
     
     private val HUGGING_FACE_API_TOKEN = "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"
     private val API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"

@@ -9,11 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: ChatViewModel
     private lateinit var chatRecyclerView: RecyclerView
-    private lateinit var messageInput: EditText
+    private lateinit var messageInput: TextInputEditText
     private lateinit var sendButton: Button
     private lateinit var moodToggleButton: Button
     private lateinit var chatAdapter: ChatAdapter
@@ -40,10 +41,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         sendButton.setOnClickListener {
-            val message = messageInput.text.toString().trim()
+            val message = messageInput.text?.toString()?.trim() ?: ""
             if (message.isNotEmpty()) {
                 viewModel.sendMessage(message)
-                messageInput.text.clear()
+                messageInput.text?.clear()
             }
         }
 

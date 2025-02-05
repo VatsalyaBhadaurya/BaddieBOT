@@ -16,8 +16,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/moodToggleButton"
+        style="@style/BaddieBotButton.Mood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mood: Sassy 💅"
@@ -30,23 +31,44 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="8dp"
+        android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintTop_toBottomOf="@id/moodToggleButton"
-        app:layout_constraintBottom_toTopOf="@id/messageInput"/>
+        app:layout_constraintBottom_toTopOf="@id/messageInputLayout"/>
 
-    <EditText
-        android:id="@+id/messageInput"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Type a message..."
-        android:padding="12dp"
         android:layout_margin="8dp"
+        android:hint="Type a message..."
+        app:boxCornerRadiusTopStart="24dp"
+        app:boxCornerRadiusTopEnd="24dp"
+        app:boxCornerRadiusBottomStart="24dp"
+        app:boxCornerRadiusBottomEnd="24dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/sendButton"/>
+        app:layout_constraintEnd_toStartOf="@id/sendButton">
 
-    <Button
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/messageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:padding="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/sendButton"
+        style="@style/BaddieBotButton.Send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
