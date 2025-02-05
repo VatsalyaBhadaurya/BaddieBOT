@@ -27,4 +27,15 @@
         <item name="iconPadding">8dp</item>
         <item name="iconTint">@color/white</item>
     </style>
+
+    <!-- Social buttons style -->
+    <style name="BaddieBotButton.Social">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="backgroundTint">@color/sassy_primary</item>
+    </style>
 </resources> 
